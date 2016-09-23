@@ -4,13 +4,72 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<link rel="stylesheet" type="text/css" href="styles/styles.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
 
 	<script src="https://use.fontawesome.com/6e5307b3fc.js"></script>
+	<script
+	  src="https://code.jquery.com/jquery-3.1.1.js"
+	  integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+	  crossorigin="anonymous"></script>
 
-	<title>Heather Crafted | Not only handcrafted, but made with love</title>
+	<title>Heather Crafted | Hand-crafted with Love</title>
 </head>
 <body>
+
+	<div class="nav-bar">
+		<div class="logo"><a href="index.html"><img src="images/heather-crafted-logo.gif" class="nav-logo" alt="Heather Crafted"></a>
+		<h1 class="site-title">Heather Crafted</h1>
+		</div>
+
+		
+
+		<div class="button-nav">
+			<button onclick="location.href='cart.html';" class="navbtn">
+				<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+			</button>
+			<button class="navbtn">
+				<i class="fa fa-bars" aria-hidden="true"></i>
+			</button>
+			<div id="nav-dropdown" class="nav-dropdown">
+				<a href="about.html" class="menu">About</a>
+				<a href="contact.html" class="menu">Contact</a>
+			</div>
+		</div>
+
+		<div class="menu-nav">
+			<ul>
+				<li><a href="about.html" class="">About</a></li>
+				<li><a href="contact.html" class="">Contact</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="product-nav">
+		<ul class="product-nav-buttons">
+			<li><a href="candles.html" class="">Candles</a></li>
+			<li><a href="spices.html" class="">Spice Mixes</a></li>
+			<li><a href="artwork.html" class="">Artwork</a></li>
+		</ul>		
+	</div>
+
+	<script>
+
+
+		$('.navbtn').click(function(){
+			if ( $('.nav-dropdown').is(':hidden')) {
+				$('.nav-dropdown').slideDown("slow");
+			} else {
+				$('.nav-dropdown').slideUp();
+			}
+		});
+
+		// $('body').on('click', function(e) {
+  //   		if($(e.target).closest('.nav-dropdown').length == 0) {
+  //      			$('.nav-dropdown').slideUp();
+		//     }
+		// });
+
+	</script>
 
 </body>
 </html>
