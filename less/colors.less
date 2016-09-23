@@ -1,0 +1,43 @@
+@brand-color: #E83541;
+@light-brand-color: lighten(@brand-color, 25%);
+
+body {
+	background-color: lighten(@brand-color, 30%);
+}
+
+a {
+	color: black;
+}
+
+.nav-bar {
+	background-color: white;
+}
+
+.navbtn {
+	background-color: white;
+}
+
+.navbtn:hover {
+	color: @brand-color;
+}
+
+.nav-dropdown a {
+	color: lightpink;
+	background-color: @brand-color;
+}
+
+.nav-dropdown a:hover {
+	color: @brand-color;
+	background-color: white;
+}
+
+.menu:hover {
+	color: @brand-color}
+
+.product-nav {
+	background-color: @light-brand-color;
+}
+
+.product-nav-buttons li:hover {
+	background-color: @brand-color;
+}
