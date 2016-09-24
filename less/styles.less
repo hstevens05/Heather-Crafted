@@ -16,12 +16,12 @@ h1 {
 	}
 }
 
-h2 {
-	padding-bottom: 10px;
+h3 {
+	padding-bottom: 5px;
 }
 
 li {
-	padding: 2px 0;
+	padding: 5px 0;
 }
 
 .nav-bg, .nav-container, .nav-bar {
@@ -135,25 +135,36 @@ li {
 	justify-content: center;
 }
 
+.product-page-links {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
 .thumb-container {
 	display: flex;
 	justify-content: center;
 	width: 75%;
-	padding: 25px;
+	padding: 25px 25px 0 25px;
 }
 
 .thumbnail {
 	width: 100%;
 	height: 100%;
 	max-width: 400px;
+}
 
+.prod-txt-link {
+	padding: 10px;
 }
 
 .footer-nav {
 	display: flex;
+	justify-content: space-around;
 
 	ul {
 		padding: 25px;
+		width: 40%;
 	}
 }
 
@@ -180,17 +191,13 @@ li {
 			display: flex;
 		}
 
-		li {
+		a {
 			padding: 10px;
-
-			a {
-				padding: 10px;
-			}
 		}
 	}	
 
 	.thumb-container {
-		width: 35%;
+		width: 100%;
 		padding: 0px;
 		margin: 20px;
 		overflow: hidden;
@@ -199,6 +206,14 @@ li {
 		border: 1px solid transparent;
 	}
 
+	.product-page-links {
+		width: 30%;
+		padding: 0 25px;
+	}
+
+	.prod-txt-link {
+		margin-top: -15px;
+	}
 
 	.thumb-link {
   		background-clip: padding-box;
@@ -216,6 +231,15 @@ li {
 	a.thumb-link:hover img {
 		transform: scale(1.1);
 		transition: transform 1s ease;
+	}
+
+	.footer-nav {
+		justify-content: flex-start;
+
+		ul {
+			width: 30%;
+			padding: 10px;
+		}
 	}
 }
 
@@ -255,8 +279,12 @@ li {
 		width: 80%;
 	}
 
-	.thumb-container {
+	.product-page-links {
 		width: 25%;
+	}
+
+	.thumb-container {
+		width: 100%;
 	}
 
 	.footer {
@@ -266,5 +294,10 @@ li {
 
 	.footer-nav {
 		width: 80%;
+
+		ul {
+			width: 20%;
+			padding: 20px;
+		}
 	}
 }
