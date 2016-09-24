@@ -22,8 +22,7 @@
 				<h1 class="site-title">Heather Crafted</h1>
 			</div>
 
-			<div class="navigation">		
-
+			<div class="navigation-links">
 				<div class="button-nav">
 					<button onclick="location.href='cart.html';" class="cartbtn">
 						<i class="fa fa-shopping-cart" aria-hidden="true"></i>
@@ -39,8 +38,8 @@
 
 				<div class="menu-nav">
 					<ul>
-						<li><a href="blog.html" class="">Blog</a></li>
-						<li><a href="contact.html" class="">Contact</a></li>
+						<li><a href="blog.html">Blog</a></li>
+						<li><a href="contact.html">Contact</a></li>
 					</ul>
 				</div>
 			</div>
@@ -50,31 +49,14 @@
 	<div class="product-nav-bg">
 		<div class="product-nav">
 			<ul class="product-nav-buttons">
-				<li><a href="candles.html" class="">Candles</a></li>
-				<li><a href="spices.html" class="">Spice Mixes</a></li>
-				<li><a href="artwork.html" class="">Artwork</a></li>
+				<li><a href="candles.html">Candles</a></li>
+				<li><a href="spices.html">Spice Mixes</a></li>
+				<li><a href="artwork.html">Artwork</a></li>
 			</ul>		
 		</div>
 	</div>
 
-	<script>
-
-
-		$('.navbtn').click(function(){
-			if ( $('.nav-dropdown').is(':hidden')) {
-				$('.nav-dropdown').slideDown("slow");
-			} else {
-				$('.nav-dropdown').slideUp();
-			}
-		});
-
-		// $('body').on('click', function(e) {
-  //   		if($(e.target).closest('.nav-dropdown').length == 0) {
-  //      			$('.nav-dropdown').slideUp();
-		//     }
-		// });
-
-	</script>
+<script type="text/javascript" src="js/scripts.js"></script>
 
 </body>
 </html>

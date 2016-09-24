@@ -4,6 +4,11 @@ body {
 }
 a {
   color: black;
+  -webkit-transition: color 0.5s ease;
+          transition: color 0.5s ease;
+}
+a:hover {
+  color: #e83541;
 }
 .nav-bg {
   background-color: white;
@@ -32,6 +37,9 @@ a {
 }
 .product-nav-buttons li:hover {
   background-color: #e83541;
+}
+.product-nav-buttons a:hover {
+  color: black;
 }
 @font-face {
   font-family: Luxi-Reg;
@@ -91,6 +99,10 @@ h1.site-title {
       -ms-flex-align: center;
           align-items: center;
 }
+.nav-logo {
+  width: 50px;
+  padding: 5px 0 0 10px;
+}
 .button-nav {
   display: -webkit-box;
   display: -webkit-flex;
@@ -119,10 +131,8 @@ h1.site-title {
   text-decoration: none;
   display: block;
   text-align: center;
-}
-.nav-logo {
-  width: 50px;
-  padding: 5px 0 0 10px;
+  -webkit-transition: none;
+          transition: none;
 }
 .menu-nav {
   display: none;
@@ -159,7 +169,6 @@ h1.site-title {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-left: 15px;
 }
 .product-nav-buttons li {
   padding: 7px 10px;
