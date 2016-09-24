@@ -1,8 +1,24 @@
 @brand-color: #E83541;
 @light-brand-color: lighten(@brand-color, 25%);
+@bg-color: lighten(@brand-color, 33%);
 
 body {
-	background-color: lighten(@brand-color, 33%);
+	background-color: @bg-color;
+}
+
+h1 {
+	color: black;
+
+	&.heading-text {
+		color: @brand-color;
+		background-color: @bg-color;
+		border-top: 2px dashed white;
+		border-bottom: 2px dashed white;
+	}
+}
+
+h2 {
+	color: white;
 }
 
 a {
@@ -49,4 +65,8 @@ a:hover {
 
 .product-nav-buttons a:hover {
 	color: black;
+}
+
+.footer {
+	background-color: @brand-color;
 }
