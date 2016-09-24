@@ -6,8 +6,7 @@ h1.site-title {
 	padding-left: 15px;
 }
 
-
-.nav-bar {
+.nav-bg, .nav-bar {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -25,12 +24,13 @@ h1.site-title {
 // Button style of navigation for mobile
 
 .button-nav {
-	padding-right: 10px;
+	display: flex;
+	padding-right: 5%;
 }
 
 // Button that creates dropdown menu
 
-.navbtn {
+.navbtn, .cartbtn {
 	border: none;
 	padding: 10px 10px;
 	transition: color 0.5s ease;
@@ -42,7 +42,7 @@ h1.site-title {
 	display: none;
 	position: absolute;
 	right: 0;
-	top: 70px;
+	top: 72px;
 	width: 100%;
 	margin-top: 17px;
 }
@@ -68,7 +68,7 @@ h1.site-title {
 
  // Product navigation bar 
 
-.product-nav {
+.product-nav-bg, .product-nav {
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
@@ -88,4 +88,47 @@ h1.site-title {
 .product-nav-buttons li {
 	padding: 7px 10px;
 	transition: background-color 0.5s ease;
+}
+
+@media (min-width: 720px) {
+
+	.navigation {
+		display: flex;
+		align-items: center;
+	}
+
+	.button-nav {
+		order: 1;
+	}
+
+	.navbtn {
+		display: none;
+	}
+
+	.menu-nav {
+		display: block;
+	}
+
+	.menu-nav ul {
+		display: flex;
+	}
+
+	.menu-nav li {
+		padding: 10px;
+	}
+}
+
+@media (min-width: 1000px) {
+
+	.nav-bg, .product-nav-bg {
+		justify-content: center;
+	}
+
+	.nav-bar {
+		width: 80%;
+	}
+
+	.product-nav {
+		width: 80%;
+	}
 }
