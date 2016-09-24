@@ -166,6 +166,10 @@ h1.site-title {
   -webkit-transition: background-color 0.5s ease;
           transition: background-color 0.5s ease;
 }
+.header-image {
+  margin-top: 90px;
+  max-width: 100%;
+}
 @media (min-width: 720px) {
   .navigation {
     display: -webkit-box;
@@ -212,5 +216,19 @@ h1.site-title {
   }
   .product-nav {
     width: 80%;
+  }
+  .content {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .header-image {
+    width: 80%;
+    height: 100%;
   }
 }
