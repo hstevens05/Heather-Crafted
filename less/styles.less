@@ -2,8 +2,26 @@
 @import 'colors.less';
 @import 'fonts.less';
 
-h1.site-title {
-	padding-left: 15px;
+h1 {
+	&.site-title {
+		padding-left: 15px;
+	}
+
+	&.heading-text {
+		text-align: center;
+		margin-top: 30px;
+		margin-bottom: 5px;
+		padding: 5px 0;
+		width: 100%;
+	}
+}
+
+h2 {
+	padding-bottom: 10px;
+}
+
+li {
+	padding: 2px 0;
 }
 
 .nav-bg, .nav-bar {
@@ -32,7 +50,7 @@ h1.site-title {
 
 .button-nav {
 	display: flex;
-	padding-right: 5%;
+	padding-right: 15px;
 }
 
 // Buttons for cart and dropdown menu
@@ -93,6 +111,15 @@ h1.site-title {
 	}
 }
 
+// Body Content
+
+.content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-bottom: 25px;
+}
+
 // Index header image
 
 .header-image {
@@ -100,11 +127,31 @@ h1.site-title {
 	max-width: 100%;
 }
 
+.thumbnail-images {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.thumbnail {
+	width: 75%;
+	height: 100%;
+	padding: 25px;
+	max-width: 400px;
+}
+
+.footer-nav {
+	display: flex;
+
+	ul {
+		padding: 25px;
+	}
+}
 
 
 @media (min-width: 720px) {
 
-	.navigation {
+	.navigation-links {
 		display: flex;
 		align-items: center;
 	}
@@ -128,9 +175,17 @@ h1.site-title {
 			padding: 10px;
 		}
 	}	
+
+	.thumbnail {
+		width: 40%;
+	}
 }
 
 @media (min-width: 1000px) {
+
+	h1.heading-text {
+		width: 80%;
+	}
 
 	.nav-bg, .product-nav-bg {
 		justify-content: center;
@@ -146,11 +201,28 @@ h1.site-title {
 
 	.content {
 		display: flex;
-		justify-content: center;
+		align-items: center;
 	}
 
 	.header-image {
 		width: 80%;
 		height: 100%;
+	}
+
+	.thumbnail-images {
+		width: 80%;
+	}
+
+	.thumbnail {
+		width: 25%;
+	}
+
+	.footer {
+		display: flex;
+		justify-content: center;
+	}
+
+	.footer-nav {
+		width: 80%;
 	}
 }
