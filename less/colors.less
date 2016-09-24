@@ -7,6 +7,11 @@ body {
 
 a {
 	color: black;
+	transition: color 0.5s ease;
+}
+
+a:hover {
+	color: @brand-color;
 }
 
 .nav-bg{
@@ -24,11 +29,11 @@ a {
 .nav-dropdown a {
 	color: white;
 	background-color: @brand-color;
-}
 
-.nav-dropdown a:hover {
-	color: @brand-color;
-	background-color: white;
+	&:hover {
+		color: @brand-color;
+		background-color: white;
+	}
 }
 
 .menu:hover {
@@ -40,4 +45,8 @@ a {
 
 .product-nav-buttons li:hover {
 	background-color: @brand-color;
+}
+
+.product-nav-buttons a:hover {
+	color: black;
 }

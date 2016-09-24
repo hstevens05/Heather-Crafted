@@ -21,6 +21,13 @@ h1.site-title {
 	align-items: center;
 }
 
+// Combination of logo image and text
+
+.nav-logo {
+	width: 50px;
+	padding: 5px 0 0 10px;
+}
+
 // Button style of navigation for mobile
 
 .button-nav {
@@ -28,7 +35,7 @@ h1.site-title {
 	padding-right: 5%;
 }
 
-// Button that creates dropdown menu
+// Buttons for cart and dropdown menu
 
 .navbtn, .cartbtn {
 	border: none;
@@ -45,19 +52,16 @@ h1.site-title {
 	top: 72px;
 	width: 100%;
 	margin-top: 17px;
-}
 
-.nav-dropdown a {
-    padding: 12px 16px;
-    height: 20px;
-    text-decoration: none;
-    display: block;
-    text-align: center;
-}
 
-.nav-logo {
-	width: 50px;
-	padding: 5px 0 0 10px;
+	a {
+	    padding: 12px 16px;
+	    height: 20px;
+	    text-decoration: none;
+	    display: block;
+	    text-align: center;
+	    transition: none;
+	}
 }
 
 // Menu navigation style - toggled off for mobile
@@ -82,12 +86,11 @@ h1.site-title {
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
-	padding-left: 15px;
-}
-
-.product-nav-buttons li {
-	padding: 7px 10px;
-	transition: background-color 0.5s ease;
+	
+	li {
+		padding: 7px 10px;
+		transition: background-color 0.5s ease;
+	}
 }
 
 // Index header image
@@ -96,6 +99,8 @@ h1.site-title {
 	margin-top: 90px;
 	max-width: 100%;
 }
+
+
 
 @media (min-width: 720px) {
 
@@ -114,15 +119,15 @@ h1.site-title {
 
 	.menu-nav {
 		display: block;
-	}
 
-	.menu-nav ul {
-		display: flex;
-	}
+		ul {
+			display: flex;
+		}
 
-	.menu-nav li {
-		padding: 10px;
-	}
+		li {
+			padding: 10px;
+		}
+	}	
 }
 
 @media (min-width: 1000px) {
