@@ -57,8 +57,22 @@ a:hover {
 .product-nav-buttons a:hover {
   color: black;
 }
+.thumbnail {
+  outline: 1px solid #e83541;
+  border: 2px solid white;
+}
 .footer {
   background-color: #e83541;
+}
+@media (min-width: 720px) {
+  .thumb-container {
+    outline: 1px solid #e83541;
+    border: 2px solid white;
+  }
+  .thumbnail {
+    outline: none;
+    border: none;
+  }
 }
 @font-face {
   font-family: Luxi-Reg;
@@ -314,6 +328,9 @@ li {
   padding: 25px;
   width: 40%;
 }
+.footer-nav i {
+  padding-right: 5px;
+}
 @media (min-width: 720px) {
   .navigation-links {
     display: -webkit-box;
@@ -353,7 +370,6 @@ li {
     overflow: hidden;
     z-index: 2;
     background-clip: padding-box;
-    border: 1px solid transparent;
   }
   .product-page-links {
     width: 30%;
