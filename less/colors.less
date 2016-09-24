@@ -1,6 +1,16 @@
 @brand-color: #E83541;
 @light-brand-color: lighten(@brand-color, 25%);
 @bg-color: lighten(@brand-color, 33%);
+@grey: lighten(black, 20%);
+
+.image-outline {
+	box-shadow: 0 0 0 1px @brand-color;
+	border: 2px solid white;
+}
+
+.image-hover-outline {
+	box-shadow: 0 0 0 1px @brand-color, 0px 1px 8px @grey;
+}
 
 body {
 	background-color: @bg-color;
@@ -22,6 +32,10 @@ h2 {
 }
 
 h3 {
+	color: @brand-color;
+}
+
+h6 {
 	color: white;
 	border-bottom: 1px solid @light-brand-color;
 }
@@ -72,10 +86,35 @@ a:hover {
 	color: black;
 }
 
+//Index page thumbnail border
+
 .thumbnail {
-	outline: 1px solid @brand-color;
-	border: 2px solid white;
+	.image-outline;
 }
+
+//Product page images
+
+.product-container:hover .prod-page-link-bg {
+	border-top: 2px dashed @light-brand-color;
+
+}
+
+.prod-page-link-bg {
+	background-color: white;
+	border: 1px solid white;
+	border-top: 2px solid white;
+	transition: border 0.5s ease;
+}
+
+.product-link {
+	.image-outline;
+	transition: box-shadow 0.5s ease;
+}
+
+.product-link:hover {
+	.image-hover-outline;
+}
+
 
 footer {
 	background-color: @brand-color;
