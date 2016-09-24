@@ -61,7 +61,7 @@ a:hover {
   outline: 1px solid #e83541;
   border: 2px solid white;
 }
-.footer {
+footer {
   background-color: #e83541;
 }
 @media (min-width: 720px) {
@@ -122,6 +122,18 @@ a {
     font-size: 0.9em;
   }
 }
+body {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100vh;
+}
 h1.site-title {
   padding-left: 15px;
 }
@@ -137,6 +149,12 @@ h3 {
 }
 li {
   padding: 5px 0;
+}
+.site {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 .nav-bg,
 .nav-container,
@@ -450,7 +468,7 @@ li {
   .thumb-container {
     width: 100%;
   }
-  .footer {
+  footer {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
