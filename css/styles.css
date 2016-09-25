@@ -1,7 +1,7 @@
 @import 'cssreset.css';
 .image-outline {
-  box-shadow: 0 0 0 1px #e83541;
-  border: 2px solid white;
+  box-shadow: 0 0 0 1.5px #e83541;
+  border: 4px solid white;
 }
 .image-hover-outline {
   box-shadow: 0 0 0 1px #e83541, 0px 1px 8px #333333;
@@ -71,22 +71,22 @@ a:hover {
   color: black;
 }
 .thumbnail {
-  box-shadow: 0 0 0 1px #e83541;
-  border: 2px solid white;
+  box-shadow: 0 0 0 1.5px #e83541;
+  border: 4px solid white;
 }
 .product-container:hover .prod-page-link-bg {
   border-top: 2px dashed #f5a7ad;
 }
 .prod-page-link-bg {
   background-color: white;
-  border: 1px solid white;
+  border: 2px solid white;
   border-top: 2px solid white;
   -webkit-transition: border 0.5s ease;
           transition: border 0.5s ease;
 }
 .product-link {
-  box-shadow: 0 0 0 1px #e83541;
-  border: 2px solid white;
+  box-shadow: 0 0 0 1.5px #e83541;
+  border: 4px solid white;
   -webkit-transition: box-shadow 0.5s ease;
           transition: box-shadow 0.5s ease;
 }
@@ -118,13 +118,13 @@ a:hover {
   background-color: white;
 }
 .contact-page-image {
-  box-shadow: 0 0 0 1px #e83541;
-  border: 2px solid white;
+  box-shadow: 0 0 0 1.5px #e83541;
+  border: 4px solid white;
 }
 .alert-box {
   background-color: white;
-  box-shadow: 0 0 0 1px #e83541;
-  border: 2px solid white;
+  box-shadow: 0 0 0 1.5px #e83541;
+  border: 4px solid white;
 }
 .alert-button {
   color: white;
@@ -168,8 +168,8 @@ table td {
   background-color: white;
 }
 .suggestion-images {
-  box-shadow: 0 0 0 1px #e83541;
-  border: 2px solid white;
+  box-shadow: 0 0 0 1.5px #e83541;
+  border: 4px solid white;
 }
 footer {
   background-color: #e83541;
@@ -182,6 +182,15 @@ footer {
   .thumbnail {
     outline: none;
     border: none;
+  }
+}
+@media (min-width: 1000px) {
+  body {
+    background-image: url('../images/knit-bg.jpg');
+    background-color: none;
+  }
+  .heading-text {
+    border: 2px dashed white;
   }
 }
 @font-face {
@@ -554,7 +563,7 @@ li {
   margin-bottom: -2px;
 }
 .prod-page-link-bg {
-  max-width: 100%;
+  width: 100%;
   height: 60px;
   padding-top: 10px;
   -webkit-transform: scaleY(1);
