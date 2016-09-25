@@ -16,6 +16,10 @@
 	border: 2px solid @light-brand-color;
 }
 
+.cart-outline {
+	border: 2px solid @brand-color;
+}
+
 body {
 	background-color: @bg-color;
 }
@@ -172,6 +176,40 @@ a:hover {
 	}
 }
 
+table {
+	.cart-outline;
+	background-color: white;
+
+	th {
+		background-color: @brand-color;
+		color: white;
+	}
+
+	td {
+		border-bottom: 2px dashed @light-brand-color;
+	}
+}
+
+.checkout {
+	color: white;
+	background-color: @brand-color;
+	.button-outline;
+	transition: all 0.5s ease;
+
+	&:hover {
+		color:black;
+		background-color: @light-brand-color;
+	}
+
+	&:active {
+		color: black;
+		background-color: white;
+	}
+}
+
+.suggestion-images {
+	.image-outline;
+}
 
 footer {
 	background-color: @brand-color;
