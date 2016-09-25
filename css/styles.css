@@ -196,6 +196,12 @@ footer {
   font-style: normal;
   font-weight: normal;
 }
+@font-face {
+  font-family: Raleway-Bold;
+  src: url("../fonts/Raleway-Bold.ttf");
+  font-style: normal;
+  font-weight: normal;
+}
 .number-font {
   font-family: "Trebuchet MS", Helvetica, sans-serif;
   font-weight: normal;
@@ -218,13 +224,15 @@ h2.contact-image-text {
   font-size: 1em;
   text-align: center;
 }
+h3 {
+  font-family: Raleway-Bold;
+}
 h3.number-font {
   text-align: center;
 }
 h6 {
-  font-family: Raleway-Reg;
+  font-family: Raleway-Bold;
   text-transform: uppercase;
-  font-weight: bold;
 }
 a {
   text-decoration: none;
@@ -261,11 +269,7 @@ footer p {
 }
 .alert-box h3 {
   font-size: 1.5em;
-  font-weight: bold;
-}
-td i {
-  vertical-align: top;
-  padding-left: 5px;
+  font-family: Raleway-Bold;
 }
 td.cart-values,
 td.cart-total-values {
@@ -276,7 +280,7 @@ td.cart-subheading {
   text-align: right;
 }
 td.cart-total-heading {
-  font-weight: bold;
+  font-family: Raleway-Bold;
 }
 .checkout {
   font-family: Raleway-Reg;
@@ -714,6 +718,10 @@ table th {
 }
 table th.cart-items-heading {
   width: 60%;
+}
+table td i {
+  vertical-align: top;
+  padding: 5px 0 0 5px;
 }
 table td img {
   width: 100%;
