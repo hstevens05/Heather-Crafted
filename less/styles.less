@@ -24,10 +24,16 @@ h1 {
 	&.product-title {
 		margin-top: 120px;
 	}
+
+	&.page-title {
+		margin-top: 120px;
+	}
+}
+
+h2 {
 }
 
 h3 {
-
 }
 
 h6 {
@@ -236,6 +242,108 @@ li {
 	padding: 5px;
 }
 
+//Contact Page
+
+.contact-container {
+	width: 85%;
+}
+
+.contact-blurb, .contact-info {
+	margin-top: 30px;
+}
+
+.contact-info p {
+	padding-top: 10px;
+
+	i {
+		padding-right: 10px;
+	}
+}
+
+.contact-form {
+	display: flex;
+	flex-direction: column;
+	margin: 30px 0;
+
+	label {
+		padding: 15px 0 5px 0;
+	}
+
+	input {
+		width: 70%;
+		height: 25px;
+		max-width: 400px;
+
+		&#submit-form {
+			width: 100px;
+			height: 40px;
+			margin-top: 20px;
+		}
+	}
+
+	textarea {
+		max-width: 400px;
+	}
+
+	input, textarea {
+		border-radius: 5px;
+	}
+}
+
+.contact-container {
+	margin-bottom: 30px;
+}
+
+.contact-page-image {
+	
+	max-width: 400px;
+	margin: 25px auto;
+}
+
+.contact-image-text {
+	margin-top: -10px;
+}
+
+//Contact form alert box
+
+.alert-window {
+	display: none;
+	background: black;
+	opacity: 0.5;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	z-index: 20;
+}
+
+.alert-box {
+	display: none;
+	width: 60%;
+	height: 200px;
+	position: fixed;
+	left: 50%;
+	transform: translate(-50%, 0);
+	top: 200px;
+	border-radius: 10px;
+	z-index: 30;
+}
+
+.alert-heading, .alert-text {
+	margin: 0 auto;
+	padding-top: 20px;
+	width: 75%;
+	margin-bottom: 10px;
+}
+
+.alert-button {
+	position: relative;
+	left: 50%;
+	transform: translate(-50%, 0);
+	border-radius: 5px;
+	padding: 10px;
+	margin-top: 10px;
+}
 
 // Footer Styling
 
@@ -326,6 +434,21 @@ li {
 		padding: 15px;
 	}
 
+	.contact {
+		width: 70%;
+		float: left;
+	}
+
+	.contact-image-container {
+		float: right;
+		width: 30%;
+		margin-top: 30px;
+	}
+
+	.contact-page-image {
+		width: 100%;
+	}
+
 	.footer-nav {
 		justify-content: flex-start;
 
@@ -391,6 +514,18 @@ li {
 	.product-container {
 		width: 31%;
 		padding: 10px;
+	}
+
+	.contact-container {
+		width: 75%;
+	}
+
+	.contact-form {
+		width: 75%;
+
+		textarea {
+			max-width: 600px;
+		}
 	}
 
 	footer {

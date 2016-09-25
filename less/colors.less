@@ -12,6 +12,10 @@
 	box-shadow: 0 0 0 1px @brand-color, 0px 1px 8px @grey;
 }
 
+.button-outline {
+	border: 2px solid @light-brand-color;
+}
+
 body {
 	background-color: @bg-color;
 }
@@ -25,10 +29,6 @@ h1 {
 		border-top: 2px dashed white;
 		border-bottom: 2px dashed white;
 	}
-}
-
-h2 {
-	font-size: 1.25em;
 }
 
 h3 {
@@ -113,6 +113,63 @@ a:hover {
 
 .product-link:hover {
 	.image-hover-outline;
+}
+
+.contact-info a {
+
+	color: @brand-color;
+
+	&:hover {
+		color: black;
+	}	
+}
+
+.contact-form {
+	input, textarea {
+		.button-outline;
+	}
+
+	input#submit-form {
+		color: white;
+		background-color: @brand-color;
+		transition: all 0.5s ease;
+
+		&:hover {
+			color: black;
+			background-color: @light-brand-color;
+		}
+
+		&:active {
+			color: black;
+			background-color: white;
+		}
+	}
+}
+
+.contact-page-image {
+	.image-outline;
+}
+
+.alert-box {
+	background-color: white;
+	.image-outline;
+}
+
+.alert-button {
+	color: white;
+	background-color: @brand-color;
+	.button-outline;
+	transition: all 0.5s ease;
+
+	&:hover {
+		color: black;
+		background-color: @light-brand-color;
+	}
+
+	&:active {
+		color: black;
+		background-color: white;
+	}
 }
 
 
