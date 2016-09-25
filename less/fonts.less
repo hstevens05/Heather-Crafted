@@ -12,7 +12,10 @@
 	font-weight: normal;
 }
 
-@number-font: "Trebuchet MS", Helvetica, sans-serif;
+.number-font {
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-weight: normal;
+	} 
 
 body {
 	font-family: Raleway-Reg;
@@ -24,12 +27,23 @@ h1 {
 
 	&.heading-text {
 		font-size: 1.5em;
+		text-align: center;
+	}
+}
+
+h2 {
+	font-size: 1.25em;
+
+	&.contact-image-text {
+		font-size: 1em;
+		text-align: center;
 	}
 }
 
 h3 {
-	font-family: @number-font;
-	text-align: center;
+	&.number-font {
+		text-align: center;
+	}
 }
 
 h6 {
@@ -43,8 +57,16 @@ a {
 }
 
 footer p {
-	font-family: @number-font;
+	.number-font;
 	font-size: 0.9em;
+}
+
+.contact-info p {
+	.number-font;
+
+	.email {
+		font-size: 0.8em;
+	}
 }
 
 .navbtn, .cartbtn {
@@ -53,6 +75,26 @@ footer p {
 
 .product-title {
 	text-align: center;
+}
+
+.contact-info h3 {
+	font-size: 1.2em;
+}
+
+.contact-blurb {
+	font-size: 1.2em;
+}
+
+#submit-form {
+	font-family: Raleway-Reg;
+	font-size: 1.2em;
+}
+
+.alert-box {
+	h3 {
+		font-size: 1.5em;
+		font-weight: bold;
+	}
 }
 
 @media (min-width: 720px) {
