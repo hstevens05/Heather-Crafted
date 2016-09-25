@@ -6,6 +6,9 @@
 .image-hover-outline {
   box-shadow: 0 0 0 1px #e83541, 0px 1px 8px #333333;
 }
+.button-outline {
+  border: 2px solid #f5a7ad;
+}
 body {
   background-color: #f9cccf;
 }
@@ -17,9 +20,6 @@ h1.heading-text {
   background-color: #f9cccf;
   border-top: 2px dashed white;
   border-bottom: 2px dashed white;
-}
-h2 {
-  font-size: 1.25em;
 }
 h3 {
   color: #e83541;
@@ -90,6 +90,54 @@ a:hover {
 .product-link:hover {
   box-shadow: 0 0 0 1px #e83541, 0px 1px 8px #333333;
 }
+.contact-info a {
+  color: #e83541;
+}
+.contact-info a:hover {
+  color: black;
+}
+.contact-form input,
+.contact-form textarea {
+  border: 2px solid #f5a7ad;
+}
+.contact-form input#submit-form {
+  color: white;
+  background-color: #e83541;
+  -webkit-transition: all 0.5s ease;
+          transition: all 0.5s ease;
+}
+.contact-form input#submit-form:hover {
+  color: black;
+  background-color: #f5a7ad;
+}
+.contact-form input#submit-form:active {
+  color: black;
+  background-color: white;
+}
+.contact-page-image {
+  box-shadow: 0 0 0 1px #e83541;
+  border: 2px solid white;
+}
+.alert-box {
+  background-color: white;
+  box-shadow: 0 0 0 1px #e83541;
+  border: 2px solid white;
+}
+.alert-button {
+  color: white;
+  background-color: #e83541;
+  border: 2px solid #f5a7ad;
+  -webkit-transition: all 0.5s ease;
+          transition: all 0.5s ease;
+}
+.alert-button:hover {
+  color: black;
+  background-color: #f5a7ad;
+}
+.alert-button:active {
+  color: black;
+  background-color: white;
+}
 footer {
   background-color: #e83541;
 }
@@ -115,6 +163,10 @@ footer {
   font-style: normal;
   font-weight: normal;
 }
+.number-font {
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  font-weight: normal;
+}
 body {
   font-family: Raleway-Reg;
 }
@@ -124,9 +176,16 @@ h1 {
 }
 h1.heading-text {
   font-size: 1.5em;
+  text-align: center;
 }
-h3 {
-  font-family: "Trebuchet MS", Helvetica, sans-serif;
+h2 {
+  font-size: 1.25em;
+}
+h2.contact-image-text {
+  font-size: 1em;
+  text-align: center;
+}
+h3.number-font {
   text-align: center;
 }
 h6 {
@@ -139,7 +198,15 @@ a {
 }
 footer p {
   font-family: "Trebuchet MS", Helvetica, sans-serif;
+  font-weight: normal;
   font-size: 0.9em;
+}
+.contact-info p {
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  font-weight: normal;
+}
+.contact-info p .email {
+  font-size: 0.8em;
 }
 .navbtn,
 .cartbtn {
@@ -147,6 +214,20 @@ footer p {
 }
 .product-title {
   text-align: center;
+}
+.contact-info h3 {
+  font-size: 1.2em;
+}
+.contact-blurb {
+  font-size: 1.2em;
+}
+#submit-form {
+  font-family: Raleway-Reg;
+  font-size: 1.2em;
+}
+.alert-box h3 {
+  font-size: 1.5em;
+  font-weight: bold;
 }
 @media (min-width: 720px) {
   footer p {
@@ -181,6 +262,9 @@ h1.heading-text {
   width: 100%;
 }
 h1.product-title {
+  margin-top: 120px;
+}
+h1.page-title {
   margin-top: 120px;
 }
 h6 {
@@ -434,6 +518,101 @@ li {
   width: 100%;
   padding: 5px;
 }
+.contact-container {
+  width: 85%;
+}
+.contact-blurb,
+.contact-info {
+  margin-top: 30px;
+}
+.contact-info p {
+  padding-top: 10px;
+}
+.contact-info p i {
+  padding-right: 10px;
+}
+.contact-form {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 30px 0;
+}
+.contact-form label {
+  padding: 15px 0 5px 0;
+}
+.contact-form input {
+  width: 70%;
+  height: 25px;
+  max-width: 400px;
+}
+.contact-form input#submit-form {
+  width: 100px;
+  height: 40px;
+  margin-top: 20px;
+}
+.contact-form textarea {
+  max-width: 400px;
+}
+.contact-form input,
+.contact-form textarea {
+  border-radius: 5px;
+}
+.contact-container {
+  margin-bottom: 30px;
+}
+.contact-page-image {
+  max-width: 400px;
+  margin: 25px auto;
+}
+.contact-image-text {
+  margin-top: -10px;
+}
+.alert-window {
+  display: none;
+  background: black;
+  opacity: 0.5;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  z-index: 20;
+}
+.alert-box {
+  display: none;
+  width: 60%;
+  height: 200px;
+  position: fixed;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+      -ms-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  top: 200px;
+  border-radius: 10px;
+  z-index: 30;
+}
+.alert-heading,
+.alert-text {
+  margin: 0 auto;
+  padding-top: 20px;
+  width: 75%;
+  margin-bottom: 10px;
+}
+.alert-button {
+  position: relative;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+      -ms-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 10px;
+}
 .footer-nav {
   display: -webkit-box;
   display: -webkit-flex;
@@ -525,6 +704,18 @@ li {
     width: 45%;
     padding: 15px;
   }
+  .contact {
+    width: 70%;
+    float: left;
+  }
+  .contact-image-container {
+    float: right;
+    width: 30%;
+    margin-top: 30px;
+  }
+  .contact-page-image {
+    width: 100%;
+  }
   .footer-nav {
     -webkit-box-pack: start;
     -webkit-justify-content: flex-start;
@@ -585,6 +776,15 @@ li {
   .product-container {
     width: 31%;
     padding: 10px;
+  }
+  .contact-container {
+    width: 75%;
+  }
+  .contact-form {
+    width: 75%;
+  }
+  .contact-form textarea {
+    max-width: 600px;
   }
   footer {
     display: -webkit-box;
