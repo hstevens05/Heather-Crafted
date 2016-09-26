@@ -440,6 +440,51 @@ table {
 	width: 30%;
 }
 
+//Blog
+
+.blog {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.blog-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	padding-bottom: 20px;
+}
+
+.blog-post {
+	width: 90%;
+	margin: 25px 0 0 0 ;
+	padding-bottom: 20px;
+}
+
+.blog-title {
+	padding: 20px 0 0 20px;
+}
+
+.blog-date {
+	padding: 5px 0 0 20px;
+}
+
+.blog-text {
+	padding: 20px 20px 0 20px;
+}
+
+.blog-image {
+	display: block;
+	width: 75%;
+	max-width: 400px;
+	margin: 20px auto 0 auto;
+}
+
+.blog-recent-posts {
+	display: none;
+}
+
 // Footer Styling
 
 .footer-nav {
@@ -458,6 +503,8 @@ table {
 
 
 @media (min-width: 720px) {
+
+	//Nav Bar
 
 	.navigation-links {
 		display: flex;
@@ -483,6 +530,8 @@ table {
 			padding: 10px;
 		}
 	}	
+
+	//Image thumbnails on Index Page
 
 	.thumb-container {
 		width: 100%;
@@ -520,6 +569,8 @@ table {
 		transition: transform 1s ease;
 	}
 
+	//Product page images
+
 	.product-images {
 		width: 90%;
 	}
@@ -528,6 +579,8 @@ table {
 		width: 45%;
 		padding: 15px;
 	}
+
+	//Contact page
 
 	.contact {
 		width: 70%;
@@ -550,6 +603,8 @@ table {
 		clear: both;
 	}
 
+	//Alert box on contact page
+
 	.alert-box {
 		width: 40%;
 	}
@@ -558,13 +613,26 @@ table {
 		padding-top: 30px;
 	}
 
+	//Shopping cart
+
 	table {
 		width: 80%;
+	}
+
+	.cart-items img {
+		width: 70%;
+	}
+
+	.cart-edit {
+		margin-top: -5px;
+		float: right;
 	}
 
 	.cart-suggestions {
 		width: 80%;
 	}
+
+	//Footer
 
 	.footer-nav {
 		justify-content: flex-start;
@@ -582,6 +650,8 @@ table {
 	h1.heading-text {
 		width: 80%;
 	}
+
+	//Nav bar reduced to 80% width
 
 	.nav-container, .product-nav-container {
 		display: block;
@@ -602,15 +672,21 @@ table {
 		width: 80%;
 	}
 
+	//Align the content of the pages to  be centered
+
 	.content {
 		display: flex;
 		align-items: center;
 	}
 
+	//Index page header image
+
 	.header-image {
 		max-width: 80%;
 		max-height: 100%;
 	}
+
+	//Index page thumbnail images
 
 	.thumbnail-images {
 		width: 80%;
@@ -624,6 +700,8 @@ table {
 		width: 100%;
 	}
 
+	//Product page
+
 	.product-images {
 		width: 80%;
 	}
@@ -632,6 +710,8 @@ table {
 		width: 31%;
 		padding: 10px;
 	}
+
+	//Contact page
 
 	.contact-container {
 		width: 75%;
@@ -645,9 +725,54 @@ table {
 		}
 	}
 
+	//Alert box on contact page
+
 	.alert-box {
 		width: 30%;
 	}
+
+	//Blog page altered to include recent posts
+
+	.blog {
+		width: 80%;
+		flex-direction: row;
+		align-items: flex-start;
+		justify-content: center;
+	}
+
+	.blog-container {
+		width: 70%;
+		align-items: flex-start;
+	}
+
+	.blog-post {
+		width: 100%;
+		margin-left: 10px;
+	}
+
+	.blog-recent-posts {
+		display: flex;
+		flex-direction: column;
+		width: 25%;
+		margin: 40px 0 0 40px;
+	}
+
+	.blog-recent-title {
+		padding-bottom: 5px;
+		margin-bottom: 20px;
+	}
+
+	.blog-rec-link-container {
+		margin-bottom: 10px;
+		padding: 0 10px;
+
+		i {
+			vertical-align: 1px;
+			padding-right: 2px;
+		}
+	}
+
+	//Shopping cart
 
 	.cart-container {
 		display: flex;
@@ -665,6 +790,8 @@ table {
 	.cart-suggestions {
 		width: 30%;
 	}
+
+	//Suggestion images on shopping cart page
 
 	.suggestion-image-container {
 		flex-direction: column;
@@ -710,6 +837,8 @@ table {
 			}
 		}
 	}
+
+	//Footer
 
 	footer {
 		display: flex;
