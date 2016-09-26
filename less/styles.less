@@ -440,7 +440,6 @@ table {
 	width: 30%;
 }
 
-
 // Footer Styling
 
 .footer-nav {
@@ -683,6 +682,33 @@ table {
 
 	.checkout {
 		left: 50%;
+	}
+
+	//Cookies bar for browsers
+
+	.cookies {
+		display: none;
+		width: 100%;
+		height: 25px;
+		position: fixed;
+		bottom: 0;
+		z-index: 50;
+
+		p {
+			padding-left: 50px;
+			float: left;
+			margin-top: 4px
+		}
+
+		button {
+			margin: 3px 20px 0 0;
+			float: right;
+			transition: background-color 0.5s ease;
+
+			&:hover {
+				background-color: @bg-color;
+			}
+		}
 	}
 
 	footer {

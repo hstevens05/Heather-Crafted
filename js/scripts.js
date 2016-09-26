@@ -1,3 +1,14 @@
+//Cookies Bar
+
+$(function(){
+	$('.cookies').show();
+});
+
+$('.cookies-button').click(function(){
+	$('.cookies').hide();
+});
+
+
 //Nav Dropdown Button
 
 $('.navbtn').click(function(){
@@ -19,7 +30,7 @@ $('#submit-form').click(function(){
 	if ( $('.alert-window').is(':hidden')) {
 		$('.alert-window').fadeIn();
 	}
-})
+});
 
 $('.alert-button').click(function(){
 	if ( $('.alert-box').not(':hidden')){
@@ -29,4 +40,4 @@ $('.alert-button').click(function(){
 	if ( $('.alert-window').not(':hidden')) {
 		$('.alert-window').fadeOut();
 	}
-})
+});
