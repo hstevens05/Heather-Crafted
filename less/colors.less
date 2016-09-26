@@ -112,11 +112,18 @@ a:hover {
 
 .product-link {
 	.image-outline;
-	transition: all 0.5s ease;
 }
 
 .product-link:hover {
 	.image-hover-outline;
+}
+
+.product-price h3 {
+	color: @brand-color;
+
+	&:hover {
+		color: @brand-color;
+	}
 }
 
 .contact-info a {
@@ -220,17 +227,11 @@ table {
 	.image-outline;
 }
 
-.cookies {
-	background-color: @brand-color;
-	color: white;
-	box-shadow: 0 1px 8px @grey;
-
 	button {
 		background-color: white;
 		border: none;
 		border-radius: 5px;
 	}
-}
 
 footer {
 	background-color: @brand-color;
@@ -272,5 +273,11 @@ footer {
 			color: black;
 		}
 	}
-}
 
+	.cookies {
+		background-color: @brand-color;
+		color: white;
+		box-shadow: 0 1px 8px @grey;
+	}
+
+}
