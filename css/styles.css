@@ -4,7 +4,7 @@
   border: 4px solid white;
 }
 .image-hover-outline {
-  box-shadow: 0 0 0 1px #e83541, 0px 1px 8px #333333;
+  box-shadow: 0 0 0 1.5px #e83541, 0px 1px 8px #333333;
 }
 .button-outline {
   border: 2px solid #f5a7ad;
@@ -87,11 +87,11 @@ a:hover {
 .product-link {
   box-shadow: 0 0 0 1.5px #e83541;
   border: 4px solid white;
-  -webkit-transition: box-shadow 0.5s ease;
-          transition: box-shadow 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+          transition: all 0.5s ease;
 }
 .product-link:hover {
-  box-shadow: 0 0 0 1px #e83541, 0px 1px 8px #333333;
+  box-shadow: 0 0 0 1.5px #e83541, 0px 1px 8px #333333;
 }
 .contact-info a {
   color: #e83541;
@@ -141,6 +141,14 @@ a:hover {
   color: black;
   background-color: white;
 }
+.blog-post {
+  background-color: white;
+  box-shadow: 0 0 0 1.5px #e83541, 0px 1px 8px #333333;
+}
+.blog-image {
+  box-shadow: 0 0 0 1.5px #e83541;
+  border: 4px solid white;
+}
 table {
   border: 2px solid #e83541;
   background-color: white;
@@ -174,6 +182,7 @@ table td {
 .cookies {
   background-color: #e83541;
   color: white;
+  box-shadow: 0 1px 8px #333333;
 }
 .cookies button {
   background-color: white;
@@ -185,21 +194,32 @@ footer {
 }
 @media (min-width: 720px) {
   .thumb-container {
-    outline: 1px solid #e83541;
-    border: 2px solid white;
+    box-shadow: 0 0 0 1.5px #e83541;
+    border: 4px solid white;
   }
   .thumbnail {
-    outline: none;
+    box-shadow: none;
     border: none;
   }
 }
 @media (min-width: 1000px) {
   body {
     background-image: url('../images/knit-bg.jpg');
-    background-color: none;
+    background-color: #f9cccf;
   }
   .heading-text {
     border: 2px dashed white;
+  }
+  .blog-recent-title {
+    border-bottom: 2px solid #e83541;
+  }
+  .blog-rec-link-container i {
+    color: #e83541;
+    -webkit-transition: color 0.5s ease;
+            transition: color 0.5s ease;
+  }
+  .blog-rec-link-container:hover i {
+    color: black;
   }
 }
 @font-face {
@@ -260,13 +280,6 @@ footer p {
   font-weight: normal;
   font-size: 0.9em;
 }
-.contact-info p {
-  font-family: "Trebuchet MS", Helvetica, sans-serif;
-  font-weight: normal;
-}
-.contact-info p .email {
-  font-size: 0.8em;
-}
 .navbtn,
 .cartbtn {
   font-size: 1.2em;
@@ -274,6 +287,13 @@ footer p {
 .product-title,
 .product-price {
   text-align: center;
+}
+.contact-info p {
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  font-weight: normal;
+}
+.contact-info p .email {
+  font-size: 0.8em;
 }
 .contact-info h3 {
   font-size: 1.2em;
@@ -288,6 +308,13 @@ footer p {
 .alert-box h3 {
   font-size: 1.5em;
   font-family: Raleway-Bold;
+}
+.blog-title {
+  font-size: 1.75em;
+}
+.blog-date {
+  font-size: 0.8em;
+  font-style: italic;
 }
 td.cart-values,
 td.cart-total-values {
@@ -304,6 +331,9 @@ td.cart-total-heading {
   font-family: Raleway-Reg;
   font-size: 1.2em;
 }
+.suggestion-title {
+  line-height: 1.2em;
+}
 @media (min-width: 720px) {
   footer p {
     font-size: 0.8em;
@@ -316,6 +346,9 @@ td.cart-total-heading {
   .cart-values,
   .cart-subheading {
     font-size: 1.1em;
+  }
+  .blog-rec-link-container i {
+    font-size: 0.75em;
   }
 }
 body {
@@ -791,6 +824,61 @@ table td.cart-subheading {
   margin: 5px;
   width: 30%;
 }
+.blog {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.blog-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  padding-bottom: 20px;
+}
+.blog-post {
+  width: 90%;
+  margin: 25px 0 0 0 ;
+  padding-bottom: 20px;
+}
+.blog-title {
+  padding: 20px 0 0 20px;
+}
+.blog-date {
+  padding: 5px 0 0 20px;
+}
+.blog-text {
+  padding: 20px 20px 0 20px;
+}
+.blog-image {
+  display: block;
+  width: 75%;
+  max-width: 400px;
+  margin: 20px auto 0 auto;
+}
+.blog-recent-posts {
+  display: none;
+}
 .footer-nav {
   display: -webkit-box;
   display: -webkit-flex;
@@ -908,6 +996,13 @@ table td.cart-subheading {
   table {
     width: 80%;
   }
+  .cart-items img {
+    width: 70%;
+  }
+  .cart-edit {
+    margin-top: -5px;
+    float: right;
+  }
   .cart-suggestions {
     width: 80%;
   }
@@ -983,6 +1078,58 @@ table td.cart-subheading {
   }
   .alert-box {
     width: 30%;
+  }
+  .blog {
+    width: 80%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .blog-container {
+    width: 70%;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .blog-post {
+    width: 100%;
+    margin-left: 10px;
+  }
+  .blog-recent-posts {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 25%;
+    margin: 40px 0 0 40px;
+  }
+  .blog-recent-title {
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+  }
+  .blog-rec-link-container {
+    margin-bottom: 10px;
+    padding: 0 10px;
+  }
+  .blog-rec-link-container i {
+    vertical-align: 1px;
+    padding-right: 2px;
   }
   .cart-container {
     display: -webkit-box;
