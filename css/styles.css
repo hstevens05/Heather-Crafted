@@ -695,9 +695,6 @@ li {
 .contact-container {
   margin-bottom: 30px;
 }
-.contact-image-container {
-  max-width: 100%;
-}
 .contact-page-image {
   max-width: 400px;
   margin: 25px auto;
@@ -830,13 +827,14 @@ table td.cart-subheading {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
+  width: 100%;
 }
 .suggestion-images {
   margin: 5px;
-  max-width: 100%;
+  max-width: 120px;
+  max-height: 120px;
 }
 .suggestion-title {
-  width: 100%;
   margin-left: 10px;
 }
 .blog {
@@ -1192,6 +1190,8 @@ table td.cart-subheading {
   }
   .suggestion-images {
     width: 100%;
+    max-width: 100%;
+    max-height: 100%;
   }
   table {
     width: 90%;
