@@ -1,7 +1,11 @@
+//Color Variables
+
 @brand-color: #E83541;
 @light-brand-color: lighten(@brand-color, 25%);
 @bg-color: lighten(@brand-color, 33%);
 @grey: lighten(black, 20%);
+
+//Outline Mixins
 
 .image-outline {
 	box-shadow: 0 0 0 1.5px @brand-color;
@@ -19,6 +23,8 @@
 .cart-outline {
 	border: 2px solid @brand-color;
 }
+
+//Page Elements
 
 body {
 	background-color: @bg-color;
@@ -53,6 +59,8 @@ a:hover {
 	color: @brand-color;
 }
 
+//Nav Bar
+
 .nav-bg{
 	background-color: white;
 }
@@ -75,20 +83,25 @@ a:hover {
 	}
 }
 
+//Nav Menu
+
 .menu:hover {
-	color: @brand-color}
+	color: @brand-color
+}
 
-	.product-nav-bg {
-		background-color: @light-brand-color;
-	}
+//Product nav bar
 
-	.product-nav-buttons li:hover {
-		background-color: @brand-color;
-	}
+.product-nav-bg {
+	background-color: @light-brand-color;
+}
 
-	.product-nav-buttons a:hover {
-		color: black;
-	}
+.product-nav-buttons li:hover {
+	background-color: @brand-color;
+}
+
+.product-nav-buttons a:hover {
+	color: black;
+}
 
 //Index page thumbnail border
 
@@ -102,6 +115,8 @@ a:hover {
 	border-top: 2px dashed @light-brand-color;
 
 }
+
+//Product page white box that grows at the bottom of the image
 
 .prod-page-link-bg {
 	background-color: white;
@@ -125,6 +140,8 @@ a:hover {
 		color: @brand-color;
 	}
 }
+
+//Contact page
 
 .contact-info a {
 
@@ -161,6 +178,8 @@ a:hover {
 	.image-outline;
 }
 
+//Alert box
+
 .alert-box {
 	background-color: white;
 	.image-outline;
@@ -182,6 +201,8 @@ a:hover {
 		background-color: white;
 	}
 }
+
+//Blog
 
 .blog-post {
 	background-color: white;
@@ -206,6 +227,8 @@ table {
 	}
 }
 
+//Cart
+
 .checkout {
 	color: white;
 	background-color: @brand-color;
@@ -227,15 +250,19 @@ table {
 	.image-outline;
 }
 
-	button {
-		background-color: white;
-		border: none;
-		border-radius: 5px;
-	}
+button {
+	background-color: white;
+	border: none;
+	border-radius: 5px;
+}
+
+//Footer
 
 footer {
 	background-color: @brand-color;
 }
+
+//For Tablet sized screens
 
 @media (min-width: 720px) {
 	.thumb-container {
@@ -247,6 +274,8 @@ footer {
 		border: none;
 	}
 }
+
+//For laptop and desktop sized screens
 
 @media (min-width: 1000px) {
 	body {
