@@ -695,8 +695,10 @@ li {
 .contact-container {
   margin-bottom: 30px;
 }
-.contact-page-image {
+.contact-image-container {
   width: 100%;
+}
+.contact-page-image {
   max-width: 400px;
   margin: 25px auto;
 }
